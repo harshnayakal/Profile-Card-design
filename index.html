@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card UI Design</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link
+       href="https:unpkg.com/boxicond@2.1.2/css/boxicons.min.css"
+       rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="profile-card">
+        <div class="image">
+            <img src="profile.jpg" alt="" class="img">
+        </div>
+
+        <div class="text-data">
+            <span class="name">Harsh Nayakal</span>
+            <span class="job">Student</span>
+        </div>
+
+        <div class="media-buttons">
+            <a href="#" style="background-color: #4267b2;" class="link">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAPtJREFUSEvt1j1KQ0EUxfFfELuUNpIFiGDjDhTcgG0a05gswt4dKCoB07kDO1GXkCIBNxCMjRBLEcwTiyEo70Pfm4hv2nu5/zlnLodpiHQakbj+LHgF22jiBU94xGuakz9RvI8TrC9ARtgqC9zB5TfDSwOvYoK1qsE7uF2APuAas893Pi3D6gMMgsFTtPCWBgvrRZarO1+o82DIPRIXcp0i4B7OAsoddnNRKRQglYLH2Myo6grttN6sVucBH8+T6ygG+BD9GOA93PwWOJyTKLqIsdU1uLIAqa2urU7Ljo961qxeigBJfpUbwU2eMcwkM2gqojgv48v+/wd+BzgMNh/2+3xnAAAAAElFTkSuQmCC"/>
+            </a>
+            <a href="#" style="background-color: #1da1f2;" class="link">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfpJREFUSEvt1kuoT1EUx/HPjYEkz0J5RUlKDDDxyiOSMhDJQJEyUEhRBmJgQCkJkamJt4wkE4WBxESGTChJmUh5F2fVvv/uPd1z9/73v/lP7q7dGey1f9+91l57rdOjS6OnS1zD4P8W+aEI9ThcxjLMwA+cw2l8S55MSd9PvZ7VwaNxBXvwp8D9aXiK2QPYfsB1LMBYLO9rUwdvrQzv4B62F8DvY1PmgG+wMUXjcZPHB3AhLT7Hzmq+bRBeghcFUXlXRXEqtuBBE3gVWqfCT5zARXyvQQ7ifAH4c3Lg4WChHoWvGFkTjCS5i2vVyV/hI47jZAH4THXoo3W7gbJ6X8rSwTS/IObMAvAxnMqBd2NhlVyLsLZAtMQkNK/mwBvQ7y5KlDM28b6f5cBxt5HFs4YAGBJxHRPwNweO9ZXpHU8aAvhN7BhIp6lkRkU6jL0Y08EBVteeZ0uqCbwf27C4A/BLLG06dBN4Pl5jRAfersOjdsFhvxk3EI2j3XEWRwbblGuLkxFhX4MVhfQnWI9fnYCjnUWSHUqtLceOCO3KQUOkr8cTU8WKZj4vzahe8Q5zI95rlMZLOcPe9XqoI5Ojrs4tFPiNWykqrb+Lkr1NdxyeRoOPP4vpmIPx1X1Hi4v5PhWZ26k6lbD62eSSq23B0g3D4NJIdWzXtVD/A1e4TB/sCCruAAAAAElFTkSuQmCC"/>
+            </a>
+            <a href="#" style="background-color: #e1306c;" class="link">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAwZJREFUSEvllknojlEUxn9/YxmKIvOQDFFmNmQIO0RSlIzFws4QJWRIFGKjLMxKWRgybSgZisyJSCxkSiky7Qzn0Xn1dt37vu9n81dufb313XvPc89znjPUUU+rrp5w+eeBOwA9gYYlDH0DngJvypgs8rg9sBWYCLQuMxTsvwfOAitSj0gBC+yoATd3g1+Au4A8KlpNgCFAUz/0GZgBnAsvxYCbAc8AebzfvruB2xVAM9uNgFHAev++BnqZ91/z4DFgXVjrHs+skWIdn22gsnsIuAiM9UesKwN+CXRyj9/WCCxQAWrN9/DcA14BnYuARa8U+dg87psA1aOmACOAH8A14ITfmwMc9HsLPFSfgBZAW+BdZjOkWsJQPK96fELsRWZkG9Ay2PgILAH2AfOc6geWETddLz2A/oD++7VCYInisqfCpMD4MgcVyE7gDtAYGOCg8krg2suv+w4qhsROFHgCcN6pm5a7PdhfL6qGeszyxrv6Q8SEWHuY21SMBzqDYrIQ+JjRMj13eYOl0xpgKbAjEfuVwBZgtTGxKXdGzOjho4ErKeDxwIWIx6cBUa+fKlJsiSE9OHy0NCMWlFaXUsDaVO6dMZFNzlk/6UqWmk/VCCyBDTPtjHPbUaozYBkXSLZUUFRYlpuityeAVznF+m7Onbnluhjjwi0EDj3u4rmtsjcoIq5uXixULvsEjaGSuEZ6DiuOYTottiKwy7xW4VfKyBM1BSlWaaQav9Aq1J6AESm8n2ljuN+Jeiz1SYWpAiLDojpWQKT4vZEwqOGogOiByukosOrpC6uzz4HuiViqZE61fBc7apPXrYgcT/TdBt6V1CYVLvWBKLAmjA9eWztWmSQSj8v+lpqlaoWnVb61xtqi6FKBPwLMKjFctq3yqzKsvi6bv1cMuA3wxMcdTQ4bgRvWo7+Xofh+NgjonsKhMah3vjPpXGr0mWsxPpAD+tvRRybUKg+Hjy4a9lRbpVRVMImkliV2VAuUAaL7j1Vlrm5XMBSkHvMIKJxeqgDX4mnls/8f8E/8tqAfEQrEDwAAAABJRU5ErkJggg=="/>
+            </a>
+            <a href="#" style="background-color: #ff0000;" class="link">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAa9JREFUSEvt1jtoFUEUxvFfUBCCooWNpBGDdtrYiYWNEiLRMmUQUUFQBLVRfGBeRVJEbCzEImWqCKIopAi2goiKiGhlIRZ2aqGie2AX1sFw517u5qbIaZYdznx/zjdnHn16FH094loHr5rza8rqjRjBAXwrLdiO3djUwpLveI34RvzBSzzEr/rctOJ9eICdXfb8I47hTaWbgp/hYJehldwTDP0PPIBPDUEr2R34HD/1ig8X6/q0YfAhLKfgE7ifAY4e2IW9GblpyigWUvBFzGaIXcckTmIK0fG5cQr3UvDNov1vZCgEeLzM24ZbOFuMbciYex53UnBUG1W3ijq4yt2D2/WuXUHkcuVqvbkmcLUVFdcQufWIw2UOwy3mXykOoelOra6Dt5RWn8u0+kLpzD/b6RJmMiuOpjpdrnU7zTVW7Ij5tOIzuJsBXsRgh9spluJxCj6OEG0y4i54lYKjM981SUU/fqTg+H+O/Q3BH+FopZ3eTgFdwtYuwz+Ud/zblcAxvhlH8LV8DMSZHLdKO/EF74tz4SdelA+B33WBNfX0aaeyjnPXK+7YunYn9szqv6QmPx+V5GUqAAAAAElFTkSuQmCC"/>
+            </a>
+        </div>
+        <div class="buttons">
+            <button class="button">Subscribe</button>
+            <button class="button">Message</button>
+        </div>
+
+        <div class="analytics">
+            <div class="data">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAodJREFUSEvNlk2ITlEYx39jhppmSLHRLIwkU2iyYGNBRON70kSJWfjYsWAzZKvIRsmSjZlpUGjIjJrxkY2UhY+SkWJWsvBRLHzG+U/Pq9Nxz73vve+tceqt9577nOf3fJ9bxyStukni8l+D64GFQAPwDPgdidIUYDHwExgDfqVFM83j9Q52HFgCTDUl34CHwBHgge2tAE4Cy4FptvcDeAIcBUaTDEgCCyJFhzPyf9oMOpAhdwo4ZpH4K5oE7gd2msRH4Dxw0543AvuAmQHsJSBDXtj+IuAQMN+ee4Fu/0wI3uWEJaR1G9jkwvo1gDS6sA4Bq2x/BNiSINdkBq80uR3A5YouH6wiGgdagE9AG/AuEsZmi4Re7wW+ROTmWKFNB14BC5LAq81LvVN+FboyVo/VjHQtc1F8pD++xweBM0ZqB56WQbVqVydo7Qb6QrBa5IQJzAbelwSeC7wxXfuBcyF4j5e3dYCKpoy1zc2CK6ZIxTrRIX6oW4HXXqUKXsa6ax2goTIL+ByC9XwN6DSaenmgRrJyesF0nHXpUx1NrLCP5znwY2CGmzayUP15qyBcI/e6zfi3Nsc/xMDaXwMM2zgsCu8AbhhUl4Z03vcdiF0SOjhoQ/87sDWH52utgDTzZbjG7D+FmnY7+VYLrtDdyQi7D9VNtjnWHVkfAsqxWkF3sWa2rI/BQ6gMvxczNAusc9XAc0GTqjpmoOBXAV0koee5oXnAku1yN9bFAC5DNIlUSMppanirqeqY59ttqOj7Sp4r9/qp+DZ4t1tm61eT41CJPL8ECK6Vy9O0AZJprbvU9aWiUVhpM83jXKuIxxXAUvP2eS5iZFYX0VHoTC0eFwLWmuOaoDr8B/UffB90yxnWAAAAAElFTkSuQmCC"/>
+                <span class="number">60k</span>
+            </div>
+            <div class="data">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq9JREFUSEvFlluITWEUx3/jFolSblOEIaHklkaU+8O8SEooKdOUySXFg8uLQjOJwgNyS3jwolBISu4KpcbIrUiiCZOi3CW+f609fXb7bN8+e2tWnc45e6+1/t9/Xb8K2kkq2gmXrMDdgQnAQKDSDt0CvALuAV9CiYQA9wBWAIuB0SmOfwPNwFF3qAPA17RDpAHr3WpgC9AzlInpvQc2AIdL2ZUC7gWcAqZ7hreA08Az4KV9d3IMB9tnGDAfqPZszgKLklKQBNwbuORAxpiDRy6HdcDtQNZTgSPAUNO/4Wxr4uBx4I7ATWCSGe0B1gI/A0Ejta7AQWCJPTjnim+O7yMOvBnYZAr63poRMK6ug6+0h8uAQ5GCD9wBeAP0sbBOBlSpeaQL8AAYDjQB45KAZ1lu9W4BcDIPome7xnXFTvuvAnyu3z5jhUL9J+kPvC0IeBTw0Hy1EfKBNwKNpqDi+F4QcDevotcD2+OM6x3T/QY2FrhfELDaSr0vqbXJ9leop1grSWGVK7K9BQFr3Ea+1KZ34oxVgRr2fYHXQFUZ/Rs/a2eL3EjgKTAiqar1zD/dNpdn5T2P7HNFutwcLAWOlQLW5LoLjDcFDQAtiqz9rILSsNBGk1wBZvoMkmZ1P6d03Zpeuioyjc3LgdRn21YaZPqPHfA0N8Fa/wWs95peF2zpR/rXrCpfeA60xYZYPagmFnrRkpqipxn9Ln7otH2sXtbE0WBRCiQz3Kq8Cky0tTmgRBQ+W782AL+SdEJuIHOBMx6w5u0O7zCR3x/ARZeiE6b/LS01IcC6DKg4JMqXWkMiJrvcon9ibaiLgpgGSVbgyKn6fZ5d8IKAsuQ40vUZ69l5a5OPZSGaURbGuoWsA3bnAYxsQ4GP5w1tOaFWy3wCPhTBNAvjIvHafIWE+r8A/wE86XYfrrmueQAAAABJRU5ErkJggg=="/>
+                <span class="number">20k</span>
+            </div>
+            <div class="data">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAalJREFUSEvt1rtrFFEUx/HPikVAQRAjWIg2YqEWFnYWgp1oIQo2EnxgIQppDEJIYSOIgoU2PomgFgqpEi0UAgH/ALGwtRQbkaBVCGQOzIXluo+Z3XGD6MAwzMyZ3/e85tzbsk5Ha524/jrwCcwPk61BIr6DQzgySvB9XMXSKMGPcKmMciTgKMfDNmiw/zg4oE9xPqvnZ7zGKj5hGR/xo2rdezXXBsxioqLYCt7jA+7hV6/vuoHj+bMa0JzxrQBP4Xk3eCdwPHuCCxUj7WX2AJc7GeTguH+Miw1Ak8QMbuZ6OfgWrjcITVJHsdium4N34i32Nwz/XjTqLvxMup1qvBmvcKxh+Fm87AWOd+HQ7cLDaw3C3+B4P3B6f65sto2ZA18wWaZuG8axHQfLM0qWH/Gfb0JcK63Hh7GALW1K/UbmgcL2Bk5mjH2IqVcJHHZ78K4YKrtLeD9w8nEvptsG0WnM1QGHbaQ0Oj7W4qrg5MAZvMAVxCpXOeIkMFaOwahp3Y1A9MtW3B0EnBw4lVJWs+t34Osw4Jq8380H2XMNDf0fcSMprCry79V4DXQqOh9xDmfuAAAAAElFTkSuQmCC"/>
+                <span class="number">12k</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
